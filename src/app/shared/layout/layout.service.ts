@@ -16,10 +16,10 @@ const store = {
     return _skin.name == (localStorage.getItem('sm-skin') || config.smartSkin)
   }),
   skins: config.skins,
-  fixedHeader: localStorage.getItem('sm-fixed-header') == 'true',
-  fixedNavigation: localStorage.getItem('sm-fixed-navigation') == 'true',
+  fixedHeader: localStorage.getItem('sm-fixed-header') || config.fixedHeader,
+  fixedNavigation: localStorage.getItem('sm-fixed-navigation') || config.fixedNavigation,
   fixedRibbon: localStorage.getItem('sm-fixed-ribbon') == 'true',
-  fixedPageFooter: localStorage.getItem('sm-fixed-page-footer') == 'true',
+  fixedPageFooter: localStorage.getItem('sm-fixed-page-footer') || config.fixedPageFooter,
   insideContainer: localStorage.getItem('sm-inside-container') == 'true',
   rtl: localStorage.getItem('sm-rtl') == 'true',
   menuOnTop: localStorage.getItem('sm-menu-on-top') == 'true',
@@ -156,10 +156,10 @@ export class LayoutService {
 
     this.trigger();
   }
-  
+
 
   onMinifyMenu(){
-    this.store.menuMinified = !this.store.menuMinified;    
+    this.store.menuMinified = !this.store.menuMinified;
     this.trigger();
   }
 

@@ -2,11 +2,16 @@
 
 export const languages: any = [
   {
-    "key": "us",
-    "alt": "United States",
-    "title": "English (US)"
+    'key': 'ch',
+    'alt': 'Switzerland',
+    'title': 'Deutsch (CH)'
   },
   {
+    'key': 'us',
+    'alt': 'United States',
+    'title': 'English (US)'
+  },
+  /*{
     "key": "fr",
     "alt": "France",
     "title": "Français"
@@ -15,13 +20,13 @@ export const languages: any = [
     "key": "es",
     "alt": "Spanish",
     "title": "Español"
-  },
+  },*/
   {
-    "key": "de",
-    "alt": "German",
-    "title": "Deutsch"
+    'key': 'de',
+    'alt': 'German',
+    'title': 'Deutsch'
   },
-  {
+  /*{
     "key": "jp",
     "alt": "Japan",
     "title": "日本語"
@@ -50,5 +55,5 @@ export const languages: any = [
     "key": "kr",
     "alt": "Korea",
     "title": "한국어"
-  }
+  }*/
 ];

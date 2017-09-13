@@ -1,6 +1,12 @@
-// import { ICounterState } from '../counter/counter.model';
+import { IAccountsState } from '../accounts/accounts.model';
+
+export interface IError {
+  status?: number;
+  message?: string;
+}
 
 export interface IAppState {
-  // counter?: ICounterState;
+  accounts?: IAccountsState;
+  error?: IError;
   routes?: any;
 }

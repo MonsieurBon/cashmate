@@ -12,6 +12,10 @@ import { HttpModule } from '@angular/http';
 import { SmartadminLayoutModule } from './shared/layout/layout.module';
 import { StoreModule } from './store/store.module';
 import { routing } from './app.routing';
+import { GraphqlModule } from './graphql/graphql.module';
+import { AccountsModule } from './accounts/accounts.module';
+import { Router } from '@angular/router';
+import { AccountsService } from './accounts/accounts.service';
 
 // Applicaiton wide providers
 const APP_PROVIDERS = [
@@ -35,6 +39,7 @@ type StoreType = {
     BrowserAnimationsModule,
     CoreModule,
     FormsModule,
+    GraphqlModule,
     HttpModule,
     NgReduxModule,
     SmartadminLayoutModule,
@@ -42,9 +47,10 @@ type StoreType = {
     routing
   ],
   providers: [
-    APP_PROVIDERS
+    APP_PROVIDERS,
+    AccountsService
   ]
 })
 export class AppModule {
-  constructor(public appRef: ApplicationRef, public appState: AppState) {}
+  constructor(public appRef: ApplicationRef, public appState: AppState) { }
 }

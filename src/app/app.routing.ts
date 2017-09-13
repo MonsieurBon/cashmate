@@ -10,7 +10,8 @@ export const routes: Routes = [
     data: {pageTitle: 'Home'},
     children: [
       {path: '', redirectTo: 'home', pathMatch: 'full' },
-      {path: 'home', loadChildren: 'app/+home/home.module#HomeModule', data: {pageTitle: 'Home'}}
+      {path: 'home', loadChildren: 'app/+home/home.module#HomeModule', data: {pageTitle: 'Home'}},
+      {path: 'accounts', loadChildren: 'app/accounts/accounts.module#AccountsModule', data: {pageTitle: 'Accounts'}},
     ]
   },
   {path: 'auth', component: AuthLayoutComponent, loadChildren: 'app/+auth/auth.module#AuthModule'},

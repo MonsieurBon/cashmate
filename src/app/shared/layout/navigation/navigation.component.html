@@ -16,6 +16,16 @@
             <a routerLink="/home" title="Home">
                 <i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">{{'Home' | i18n}}</span></a>
         </li>
+      <li id="account-list" routerLinkActive="active">
+        <a routerLink="/accounts" title="Accounts">
+          <i class="fa fa-lg fa-fw fa-bank"></i> <span class="menu-item-parent">{{'Accounts' | i18n }}</span>
+        </a>
+        <ul>
+          <li *ngFor="let account of accounts$ | async" routerLinkActive="active">
+            <a routerLink="/accounts/blabla">{{account.name}}</a>
+          </li>
+        </ul>
+      </li>
       <!--<li>
         <a title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span
           class="menu-item-parent">{{'Dashboard' | i18n}}</span></a>

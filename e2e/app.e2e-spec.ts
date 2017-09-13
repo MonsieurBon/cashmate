@@ -13,4 +13,11 @@ describe('cashmate-frontend App', () => {
     page.navigateTo();
     expect(page.getParagraphText()).toEqual('Home');
   });
+
+  it('should have three classes on body', () => {
+    page.navigateTo();
+    expect(page.getBodyClasses()).toContain('fixed-header');
+    expect(page.getBodyClasses()).toContain('fixed-navigation');
+    expect(page.getBodyClasses()).toContain('fixed-page-footer');
+  });
 });

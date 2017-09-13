@@ -1,9 +1,11 @@
-import { combineReducers, Reducer } from 'redux';
-// import { counterReducer } from '../counter/counter.reducer';
+import { combineReducers } from 'redux';
 import { IAppState } from './root.model';
 import { routerReducer } from '@angular-redux/router';
+import { accountsReducer } from '../accounts/accounts.reducer';
+import { errorReducer } from './error.reducer';
 
 export const rootReducer = combineReducers<IAppState>({
-  // counter: counterReducer,
+  accounts: accountsReducer,
+  error: errorReducer,
   routes: routerReducer
 });

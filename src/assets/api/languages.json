@@ -1,10 +1,15 @@
 [
     {
+        "key": "ch",
+        "alt": "Switzerland",
+        "title": "Deutsch (CH)"
+    },
+    {
         "key": "us",
         "alt": "United States",
         "title": "English (US)"
     },
-    {
+    /*{
         "key": "fr",
         "alt": "France",
         "title": "Français"
@@ -13,13 +18,13 @@
         "key": "es",
         "alt": "Spanish",
         "title": "Español"
-    },
+    },*/
     {
         "key": "de",
         "alt": "German",
         "title": "Deutsch"
     },
-    {
+    /*{
         "key": "jp",
         "alt": "Japan",
         "title": "日本語"
@@ -48,5 +53,5 @@
         "key": "kr",
         "alt": "Korea",
         "title": "한국어"
-    }
+    }*/
 ]

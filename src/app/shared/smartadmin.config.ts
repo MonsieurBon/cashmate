@@ -1,10 +1,14 @@
 export const config: any = {
 
-  defaultLocale: "us",
+  defaultLocale: "ch",
 
   API_URL: "assets/api",
 
   menu_speed: 200,
+
+  fixedPageFooter: false,
+  fixedNavigation: true,
+  fixedHeader: true,
 
   smartSkin: "smart-style-0",
 
@@ -172,7 +176,7 @@ export const config: any = {
    *  ж—Ґжњ¬иЄћ         ['ja-JP']
    *  Lingua latД«na    ['la']
    */
-  voice_command_lang: 'en-US',
+  voice_command_lang: 'de-CH',
   /**
    *  Use localstorage to remember on/off (best used with HTML Version)
    */
