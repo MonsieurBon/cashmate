@@ -15,7 +15,7 @@ export class GraphqlService {
     }
   }`;
 
-  constructor(private router: Router) {
+  constructor() {
     this.url = environment.graphQL.endpoint;
   }
 
