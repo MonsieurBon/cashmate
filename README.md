@@ -1,6 +1,6 @@
 # CashmateFrontend
 
-[![Build Status](https://travis-ci.org/MonsieurBon/cashmate-frontend.svg?branch=master)](https://travis-ci.org/MonsieurBon/cashmate-frontend)
+[![Build Status](https://travis-ci.org/MonsieurBon/cashmate-frontend.svg?branch=master)](https://travis-ci.org/MonsieurBon/cashmate-frontend) [![codecov](https://codecov.io/gh/MonsieurBon/cashmate-frontend/branch/master/graph/badge.svg)](https://codecov.io/gh/MonsieurBon/cashmate-frontend) [![dependencies](https://david-dm.org/MonsieurBon/cashmate-frontend.svg)](https://david-dm.org/MonsieurBon/cashmate-frontend)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
 
